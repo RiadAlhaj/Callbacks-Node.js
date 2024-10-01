@@ -19,10 +19,19 @@ function displayLocation(callback) {
   }, 3000); 
 }
 
-function displayHobbies(callback) {
+function displayHobbies() {
   setTimeout(() => {
     console.log("Hobbies: Coding, Sports and cooking");
     callback();
   }, 4000); 
 }
+
+displayName(()=>{
+  displayAge(()=>{
+    displayLocation(()=>{
+      displayHobbies(()=>{
+      });
+    });
+  });
+});
 
