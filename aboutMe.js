@@ -12,10 +12,17 @@ function displayAge(callback) {
   }, 2000); 
 }
 
-function displayAge(callback) {
+function displayLocation(callback) {
   setTimeout(() => {
     console.log("Born in:Tripoli Libya, Currently living in: Stockholm");
     callback();
   }, 3000); 
+}
+
+function displayHobbies(callback) {
+  setTimeout(() => {
+    console.log("Hobbies: Coding, Sports and cooking");
+    callback();
+  }, 4000); 
 }
 
